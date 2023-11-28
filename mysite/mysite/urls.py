@@ -20,8 +20,9 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('polls',include('polls.urls')),
-    path('home',include('home.urls')),
+    path('',include('home.urls')),
     path('blog',include('blog.urls')),
     path('contact',include('contact.urls')),
+     path("__reload__/", include("django_browser_reload.urls")),
 
 ]

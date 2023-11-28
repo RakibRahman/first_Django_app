@@ -1,1 +1,1 @@
-# first_Django_app
+# Class 7 Assignment

@@ -1,0 +1,13 @@
+{% extends "base.html" %} {%block title%}Home {%endblock title%} {%block style%}
+<style>
+  #welcome {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+  }
+</style>
+{%endblock style%} {%block content%}
+
+<div id="welcome">Welcome {{name}}</div>
+
+{%endblock content%}

@@ -2,7 +2,9 @@ from django.shortcuts import render
 
 # Create your views here.
 def BlogHome(req):
-    return render(req,'blog.html')
+    context = {
+        'title':'Blogs',
+        'subTitle':'Lots of blogs'
+    }
+    return render(req,'blog.html',context)
 
-def BlogPost(req):
-    return render(req,'base.html')
